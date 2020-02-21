@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: HelpDesk
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Gustavo.Coimbra
+Implementation-Vendor-Id: com.curso
+Build-Jdk: 1.8.0_241
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/HelpDesk
+Created-By: Maven Integration for Eclipse
+
