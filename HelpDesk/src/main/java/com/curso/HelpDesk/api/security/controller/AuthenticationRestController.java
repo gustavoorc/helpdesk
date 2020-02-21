@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.curso.HelpDesk.api.Servico.UsuarioService;
 import com.curso.HelpDesk.api.entidade.User;
 import com.curso.HelpDesk.api.security.jwt.JwtAuthenticationRequest;
 import com.curso.HelpDesk.api.security.jwt.JwtTokenUtil;
 import com.curso.HelpDesk.api.security.model.CurrentUser;
+import com.curso.HelpDesk.api.service.UserService;
 
 
 
@@ -38,7 +38,7 @@ public class AuthenticationRestController {
     private UserDetailsService userDetailsService;
     
     @Autowired
-    private UsuarioService usuarioService;
+    private UserService usuarioService;
 
     @PostMapping(value="/api/auth")
     public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtAuthenticationRequest authenticationRequest) throws AuthenticationException {

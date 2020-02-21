@@ -6,15 +6,15 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.curso.HelpDesk.api.Servico.UsuarioService;
 import com.curso.HelpDesk.api.entidade.User;
 import com.curso.HelpDesk.api.security.jwt.JwtUserFactory;
+import com.curso.HelpDesk.api.service.UserService;
 
 @Service
 public class JwtUserDetailServiceImpl implements UserDetailsService{
 	
 	@Autowired
-	private UsuarioService usuarioService;
+	private UserService usuarioService;
 
 	@Override
 	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {

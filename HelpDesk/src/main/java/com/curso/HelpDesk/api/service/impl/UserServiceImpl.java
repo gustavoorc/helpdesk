@@ -1,4 +1,4 @@
-package com.curso.HelpDesk.api.Servico.impl;
+package com.curso.HelpDesk.api.service.impl;
 
 
 import java.util.Optional;
@@ -9,13 +9,13 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
-import com.curso.HelpDesk.api.Servico.UsuarioService;
 import com.curso.HelpDesk.api.entidade.User;
 import com.curso.HelpDesk.api.repository.UserRepository;
+import com.curso.HelpDesk.api.service.UserService;
 
 
 @Service
-public class UsuarioServiceImpl implements UsuarioService {
+public class UserServiceImpl implements UserService {
 	
 	@Autowired
 	private UserRepository usuarioInterface;

@@ -1,4 +1,4 @@
-package com.curso.HelpDesk.api.Servico;
+package com.curso.HelpDesk.api.service;
 
 import java.util.Optional;
 
@@ -6,7 +6,7 @@ import org.springframework.data.domain.Page;
 
 import com.curso.HelpDesk.api.entidade.User;
 
-public interface UsuarioService {
+public interface UserService {
 	
 	User findByEmail(String email);
 	

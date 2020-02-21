@@ -22,7 +22,7 @@ public class HelpDeskApplication {
 	        return args -> {
 	            initUsers(userRepository, passwordEncoder);
 	        };
-
+ 
 	    } 
 	    
 		private void initUsers(UserRepository userRepository, PasswordEncoder passwordEncoder) {
